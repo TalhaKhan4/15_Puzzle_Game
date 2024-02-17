@@ -102,6 +102,9 @@
     } else if (key === "ArrowDown") {
       i = gameArr.indexOf(0) - gameRowLength;
     }
+    else {
+      return;
+    }
 
     // checking if the number can be swaped with the number to its right
     if (gameArr[i + 1] === 0 && (i + 1) % gameRowLength !== 0) {
@@ -125,7 +128,7 @@
     if (isSolved()) {
       setTimeout(function () {
         alert("You have solved the puzzle!");
-      }, 0.5 * 1000);
+      }, 0.3 * 1000);
 
       /* 
       // removing click event listener from all the boxes
