@@ -48,3 +48,34 @@ body {
   font-weight: 800;
   cursor: pointer;
 }
+
+@media (max-width: 450px) {
+  .container {
+    width: 85vw;
+    height: 85vw;
+  }
+}
+
+@media (max-width: 440px) {
+  .number {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 380px) {
+  .number {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .number {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 300px) {
+  .number {
+    font-size: 40px;
+  }
+}
